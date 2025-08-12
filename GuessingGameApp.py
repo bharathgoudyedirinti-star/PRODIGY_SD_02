@@ -4,7 +4,7 @@ import random
 class GuessingGameApp:
     def __init__(self, root):  # Fixed constructor name
         self.root = root
-        self.root.title("🎯 Guessing Game")
+        self.root.title(" Guessing Game")
         self.root.geometry("350x250")
 
         # Random number
@@ -42,13 +42,13 @@ class GuessingGameApp:
             self.attempts_label.config(text=f"Attempts: {self.attempts}")
 
             if guess < self.number_to_guess:
-                self.feedback_label.config(text="📉 Too low! Try again.", fg="blue")
+                self.feedback_label.config(text=" Too low! Try again.", fg="blue")
             elif guess > self.number_to_guess:
-                self.feedback_label.config(text="📈 Too high! Try again.", fg="orange")
+                self.feedback_label.config(text=" Too high! Try again.", fg="orange")
             else:
-                self.feedback_label.config(text=f"🎉 Correct! You guessed it in {self.attempts} attempts.", fg="green")
+                self.feedback_label.config(text=f" Correct! You guessed it in {self.attempts} attempts.", fg="green")
         except ValueError:
-            self.feedback_label.config(text="❌ Please enter a valid number.", fg="red")
+            self.feedback_label.config(text="Please enter a valid number.", fg="red")
 
     def restart_game(self):
         self.number_to_guess = random.randint(1, 100)
