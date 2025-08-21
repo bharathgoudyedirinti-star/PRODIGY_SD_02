@@ -3,9 +3,6 @@ A simple and fun number guessing game built with Python and Tkinter.
 The app generates a random number between 1 and 100, and you have to guess it.
 It gives feedback if your guess is too high or too low, and shows the number of attempts you’ve made.
 
-Screenshot
-(Add your app screenshot here if you want)
-
 Features
 Random number generation between 1 and 100
 Real-time feedback (Too High, Too Low, or Correct)
